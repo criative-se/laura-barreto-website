@@ -14,7 +14,7 @@ export default function Home() {
             alt="Foto de perfil"
             className="rounded-full object-cover"
             fill
-            src="/laura-barreto.jpg"
+            src="/laura-barreto.webp"
           />
         </div>
         <h1 className="font-bold text-4xl italic md:text-5xl">Laura Barreto</h1>
