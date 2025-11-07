@@ -5,20 +5,58 @@ import "./globals.css";
 const PlayfairDisplay = Playfair_Display({
   variable: "--font-serif",
   subsets: ["latin"],
-  weight: ['400', '700'],
+  weight: ["400", "700"],
   preload: true,
-  style: ["italic", "normal"]
+  style: ["italic", "normal"],
 });
 
 const montSerratSerif = Montserrat({
   variable: "--font-montserrat-sans",
   subsets: ["latin"],
-  weight: ['400', '500'],
+  weight: ["400", "500"],
   preload: true,
 });
 
 export const metadata: Metadata = {
-  title: "Laura Barreto | Estrategista digital especialista em reputação e posicionamento",
+  title:
+    "Laura Barreto | Estrategista digital especialista em reputação e posicionamento",
+  description:
+    "Em 2 meses te ensino a se posicionar, construir sua reputação digital e vender mais com estratégia.",
+  keywords: [
+    "estratégia digial",
+    "posicionamento digital",
+    "reputação digital",
+    "vender mais",
+  ],
+  openGraph: {
+    locale: "pt-BR",
+    type: "website",
+    title:
+      "Laura Barreto | Estrategista digital especialista em reputação e posicionamento",
+    description:
+      "Em 2 meses te ensino a se posicionar, construir sua reputação digital e vender mais com estratégia.",
+    url: "https://laurabarretomkt.com.br",
+    siteName:
+      "Laura Barreto | Estrategista digital especialista em reputação e posicionamento",
+    phoneNumbers: "+55 (48) 98859-3834",
+    images: [
+      {
+        url: "https://laurabarretomkt.com.br/laura-barreto.jpg",
+        width: 3648,
+        height: 5472,
+        alt: "Laura Barreto | Estrategista digital especialista em reputação e posicionamento",
+      },
+    ],
+    countryName: "Brasil",
+  },
+  metadataBase: new URL("https://laurabarreto.com.br"),
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    follow: true,
+    index: true,
+  },
 };
 
 export default function RootLayout({
@@ -27,7 +65,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <body
         className={`${PlayfairDisplay.variable} ${montSerratSerif.variable} antialiased`}
       >
