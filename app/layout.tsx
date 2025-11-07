@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     ],
     countryName: "Brasil",
   },
-  metadataBase: new URL("https://laurabarreto.com.br"),
+  metadataBase: new URL("https://laurabarretomkt.com.br"),
   alternates: {
     canonical: "/",
   },
