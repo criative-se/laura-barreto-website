@@ -18,8 +18,7 @@ const montSerratSerif = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title:
-    "Laura Barreto | Estrategista digital especialista em reputação e posicionamento",
+  title: "Laura Barreto | Estrategista digital",
   description:
     "Em 2 meses te ensino a se posicionar, construir sua reputação digital e vender mais com estratégia.",
   keywords: [
