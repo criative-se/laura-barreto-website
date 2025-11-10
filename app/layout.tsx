@@ -67,6 +67,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <link
+        as="image"
+        fetchPriority="high"
+        href="/laura-barreto.webp"
+        rel="preload"
+        type="image/webp"
+      />
+
       <body
         className={`${PlayfairDisplay.variable} ${montSerratSerif.variable} antialiased`}
       >
