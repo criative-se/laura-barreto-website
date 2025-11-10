@@ -14,6 +14,7 @@ export default function Home() {
             alt="Foto de perfil"
             className="rounded-full object-cover"
             fill
+            loading="eager"
             priority
             src="/laura-barreto.webp"
           />
