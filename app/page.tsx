@@ -1,14 +1,23 @@
 import Image from "next/image";
 import { CTA } from "./components/cta";
-import { InstagramIcon } from "./components/instagram";
+import { SocialMedias } from "./components/social-medias";
 import { TalkToMe } from "./components/talk-to-me";
-import { ThreadsIcon } from "./components/threads";
-import { TiktokIcon } from "./components/tiktok";
 
 export default function Home() {
   return (
     <>
-      <main className="flex min-h-screen flex-col items-center space-y-4 bg-[url(/background.png)] bg-center bg-cover bg-fixed bg-no-repeat p-4 text-neutral-50 xl:space-y-5">
+      <main className="flex min-h-screen flex-col items-center space-y-4 p-4 text-neutral-50 xl:space-y-5">
+        <div className="-z-10 fixed inset-0">
+          <Image
+            alt="Imagem de fundo do website de Laura Barreto"
+            className="object-cover object-center"
+            fill
+            priority
+            quality={85}
+            sizes="100vw"
+            src="/background.png"
+          />
+        </div>
         <div className="relative size-44">
           <Image
             alt="Retrato profissional de Laura Barreto, especialista em marketing digital"
@@ -70,41 +79,7 @@ export default function Home() {
         </h4>
 
         <section className="container mx-auto grid grid-cols-1 justify-center gap-4 md:grid-cols-2">
-          <div className="flex items-center justify-center gap-2 rounded-2xl bg-white/10 p-2 shadow-md md:col-span-2">
-            <a
-              className="flex h-full w-full items-center justify-center gap-2 text-lg md:text-2xl"
-              href="https://www.instagram.com/laurabarretomkt?igsh=dDZjdTQ0azh1dnh3"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <InstagramIcon />
-              laurabarretomkt
-            </a>
-          </div>
-
-          <div className="flex items-center justify-center gap-2 rounded-2xl bg-white/10 p-2 shadow-md">
-            <a
-              className="flex h-full w-full items-center justify-center gap-2 text-lg md:text-2xl"
-              href="https://www.threads.com/@laurabarretomkt"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <ThreadsIcon />
-              laurabarretomkt
-            </a>
-          </div>
-
-          <div className="flex items-center justify-center gap-2 rounded-2xl bg-white/10 p-2 shadow-md">
-            <a
-              className="flex h-full w-full items-center justify-center gap-2 text-lg md:text-2xl"
-              href="https://www.tiktok.com/@alaurabarreto?_r=1&_t=ZM-91ChHv4rGa8"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <TiktokIcon />
-              laurabarretomkt
-            </a>
-          </div>
+          <SocialMedias />
         </section>
       </main>
 

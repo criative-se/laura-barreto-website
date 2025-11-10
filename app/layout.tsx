@@ -3,18 +3,21 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Montserrat, Playfair_Display } from "next/font/google";
 import "./globals.css";
+import Head from "next/head";
 
 const PlayfairDisplay = Playfair_Display({
   variable: "--font-serif",
   subsets: ["latin"],
   weight: ["400", "700"],
   preload: true,
+  display: "swap",
   style: ["italic", "normal"],
 });
 
 const montSerratSerif = Montserrat({
   variable: "--font-montserrat-sans",
   subsets: ["latin"],
+  display: "swap",
   weight: ["400", "500"],
   preload: true,
 });
@@ -67,13 +70,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <link
-        as="image"
-        fetchPriority="high"
-        href="/laura-barreto.webp"
-        rel="preload"
-        type="image/webp"
-      />
+      <Head>
+        <link
+          as="image"
+          fetchPriority="high"
+          href="/background.png"
+          rel="preload"
+          type="image/png"
+        />
+        <link
+          as="image"
+          fetchPriority="high"
+          href="/laura-barreto.webp"
+          rel="preload"
+          type="image/webp"
+        />
+      </Head>
 
       <body
         className={`${PlayfairDisplay.variable} ${montSerratSerif.variable} antialiased`}
