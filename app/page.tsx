@@ -14,6 +14,7 @@ export default function Home() {
             alt="Retrato profissional de Laura Barreto, especialista em marketing digital"
             blurDataURL="/laura-barreto-blur.webp"
             className="rounded-full object-cover"
+            fetchPriority="high"
             fill
             placeholder="blur"
             priority
