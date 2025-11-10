@@ -11,15 +11,14 @@ export default function Home() {
       <main className="flex min-h-screen flex-col items-center space-y-4 bg-[url(/background.png)] bg-center bg-cover bg-fixed bg-no-repeat p-4 text-neutral-50 xl:space-y-5">
         <div className="relative size-44">
           <Image
-            alt="Foto de perfil"
-            blurDataURL="/laura-barreto.webp"
+            alt="Retrato profissional de Laura Barreto, especialista em marketing digital"
+            blurDataURL="/laura-barreto-blur.webp"
             className="rounded-full object-cover"
             fill
-            loading="eager"
             placeholder="blur"
             priority
+            sizes="(max-width: 768px) 128px, (max-width: 1200px) 192px, 256px"
             src="/laura-barreto.webp"
-            unoptimized
           />
         </div>
         <h1 className="font-bold text-4xl italic md:text-5xl">Laura Barreto</h1>
