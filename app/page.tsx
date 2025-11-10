@@ -12,11 +12,14 @@ export default function Home() {
         <div className="relative size-44">
           <Image
             alt="Foto de perfil"
+            blurDataURL="/laura-barreto.webp"
             className="rounded-full object-cover"
             fill
             loading="eager"
+            placeholder="blur"
             priority
             src="/laura-barreto.webp"
+            unoptimized
           />
         </div>
         <h1 className="font-bold text-4xl italic md:text-5xl">Laura Barreto</h1>
