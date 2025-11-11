@@ -11,6 +11,7 @@ export default function Home() {
           <Image
             alt="Imagem de fundo do website de Laura Barreto"
             className="object-cover object-center"
+            fetchPriority="high"
             fill
             priority
             quality={85}
@@ -21,7 +22,7 @@ export default function Home() {
         <div className="relative size-44">
           <Image
             alt="Retrato profissional de Laura Barreto, especialista em marketing digital"
-            blurDataURL="/laura-barreto-blur.webp"
+            blurDataURL="data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoHAAoAAsBMJZQC7AD0iDstIAD+4nx5eJeGx+H+CEV1DvzQ6NbcXEcDA0NWu55H6D0IAA=="
             className="rounded-full object-cover"
             fetchPriority="high"
             fill
