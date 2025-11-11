@@ -1,27 +1,6 @@
-"use client";
-
-import dynamic from "next/dynamic";
-
-const InstagramIcon = dynamic(
-  () =>
-    import("./instagram").then((mod) => ({
-      default: mod.InstagramIcon,
-    })),
-  { ssr: false }
-);
-
-const ThreadsIcon = dynamic(
-  () =>
-    import("./threads").then((mod) => ({
-      default: mod.ThreadsIcon,
-    })),
-  { ssr: false }
-);
-
-const TiktokIcon = dynamic(
-  () => import("./tiktok").then((mod) => ({ default: mod.TiktokIcon })),
-  { ssr: false }
-);
+import { InstagramIcon } from "./instagram";
+import { ThreadsIcon } from "./threads";
+import { TiktokIcon } from "./tiktok";
 
 export function SocialMedias() {
   return (

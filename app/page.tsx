@@ -22,7 +22,7 @@ export default function Home() {
         <div className="relative size-44">
           <Image
             alt="Retrato profissional de Laura Barreto, especialista em marketing digital"
-            blurDataURL="data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoHAAoAAsBMJZQC7AD0iDstIAD+4nx5eJeGx+H+CEV1DvzQ6NbcXEcDA0NWu55H6D0IAA=="
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAKCAIAAAD3rtNaAAAACXBIWXMAAAPoAAAD6AG1e1JrAAAA3UlEQVR4nGO4deX2/esPbt98ev3L/6f//z/6///+//8M967fv3/9wfVrj0+cP3Tl1vYrdzc/fHsDKrpz+5G8qMBNSyq2rp9wZO9Ehge3Ht6//qAot6gmwL26tmX9tn1//v2Hiqam5FqY2nh7hUzq6j+2axvD/esP7l2/n5yUoa2qpa2q5eMb0VzVABXNyiwS4xOQFxf3dXCJC4lluHvt7q0rt3Oyi0X4eLRkZXyM9WIjkkCi1y/cbquoF+fh0ZCSctdT9TIzZ7hx8fa1szcKCqu4GZjlBPgsVeTszCwBd1F4b9kFcnEAAAAASUVORK5CYII="
             className="rounded-full object-cover"
             fetchPriority="high"
             fill

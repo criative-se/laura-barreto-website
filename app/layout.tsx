@@ -71,6 +71,13 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <Head>
+        <link href="https://fonts.googleapis.com" rel="preconnect" />
+        <link
+          crossOrigin="anonymous"
+          href="https://fonts.gstatic.com"
+          rel="preconnect"
+        />
+
         <link
           as="image"
           fetchPriority="high"
@@ -90,9 +97,9 @@ export default function RootLayout({
       <body
         className={`${PlayfairDisplay.variable} ${montSerratSerif.variable} antialiased`}
       >
+        {children}
         <SpeedInsights />
         <Analytics />
-        {children}
       </body>
     </html>
   );
