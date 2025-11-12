@@ -6,18 +6,11 @@ import { TalkToMe } from "./components/talk-to-me";
 export default function Home() {
   return (
     <>
-      <main className="flex min-h-screen flex-col items-center space-y-4 p-4 text-neutral-50 xl:space-y-5">
-        <div className="-z-10 fixed inset-0">
-          <Image
-            alt="Imagem de fundo do website de Laura Barreto"
-            className="object-cover object-center"
-            fetchPriority="high"
-            fill
-            priority
-            quality={85}
-            sizes="100vw"
-            src="/background.png"
-          />
+      <main className="relative flex min-h-screen flex-col items-center space-y-4 overflow-hidden bg-linear-to-br from-[#4a1a5c] via-[#2d1444] to-[#1a0d2e] p-4 text-neutral-50 xl:space-y-5">
+        <div className="-z-10 pointer-events-none absolute inset-0">
+          <div className="-right-24 -top-24 absolute h-96 w-96 rounded-full bg-gradient-radial from-[#6b2d8f] to-transparent opacity-40 blur-3xl" />
+          <div className="-bottom-36 -left-36 absolute h-[500px] w-[500px] rounded-full bg-gradient-radial from-[#4a1a5c] to-transparent opacity-40 blur-3xl" />
+          <div className="-translate-x-1/2 -translate-y-1/2 absolute top-1/2 left-1/2 h-[350px] w-[350px] rounded-full bg-gradient-radial from-[#8b3aa8] to-transparent opacity-40 blur-3xl" />
         </div>
         <div className="relative size-44">
           <Image
@@ -29,7 +22,7 @@ export default function Home() {
             placeholder="blur"
             priority
             sizes="(max-width: 768px) 128px, (max-width: 1200px) 192px, 256px"
-            src="/laura-barreto.webp"
+            src="/laura-barreto.avif"
           />
         </div>
         <h1 className="font-bold text-4xl italic md:text-5xl">Laura Barreto</h1>

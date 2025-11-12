@@ -77,20 +77,14 @@ export default function RootLayout({
           href="https://fonts.gstatic.com"
           rel="preconnect"
         />
+        <link href="https://vitals.vercel-insights.com" rel="dns-prefetch" />
 
         <link
           as="image"
           fetchPriority="high"
-          href="/background.png"
+          href="/laura-barreto.avif"
           rel="preload"
-          type="image/png"
-        />
-        <link
-          as="image"
-          fetchPriority="high"
-          href="/laura-barreto.webp"
-          rel="preload"
-          type="image/webp"
+          type="image/avif"
         />
       </Head>
 
