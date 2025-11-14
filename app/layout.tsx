@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     phoneNumbers: "+55 (48) 98859-3834",
     images: [
       {
-        url: "https://laurabarretomkt.com.br/laura-barreto.jpg",
+        url: "https://laurabarretomkt.com.br/laura-barreto.avif",
         width: 3648,
         height: 5472,
         alt: "Laura Barreto | Estrategista digital especialista em reputação e posicionamento",
@@ -71,6 +71,17 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <Head>
+        <style
+          // biome-ignore lint/security/noDangerouslySetInnerHtml: <better speed index>
+          dangerouslySetInnerHTML={{
+            __html: `
+              :root{--background:#ffffff;--foreground:#171717}
+              @media(prefers-color-scheme:dark){:root{--background:#0a0a0a;--foreground:#ededed}}
+              body{background:var(--background);color:var(--foreground);font-family:system-ui,-apple-system,sans-serif;margin:0}
+              main{min-height:100vh}
+            `,
+          }}
+        />
         <link href="https://fonts.googleapis.com" rel="preconnect" />
         <link
           crossOrigin="anonymous"
