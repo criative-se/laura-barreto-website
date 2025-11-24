@@ -12,6 +12,8 @@ const PlayfairDisplay = Playfair_Display({
   preload: true,
   display: "swap",
   style: ["italic", "normal"],
+  adjustFontFallback: true,
+  fallback: ["Georgia", "serif"],
 });
 
 const montSerratSerif = Montserrat({
@@ -20,6 +22,8 @@ const montSerratSerif = Montserrat({
   display: "swap",
   weight: ["400", "500"],
   preload: true,
+  adjustFontFallback: true,
+  fallback: ["system-ui", "sans-serif"],
 });
 
 export const metadata: Metadata = {
@@ -81,6 +85,7 @@ export default function RootLayout({
               main{min-height:100vh}
             `,
           }}
+          media="print"
         />
         <link href="https://fonts.googleapis.com" rel="preconnect" />
         <link

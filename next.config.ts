@@ -9,7 +9,7 @@ const nextConfig: NextConfig = {
     minimumCacheTTL: 31_536_000, // Cache de 1 ano
     qualities: [75, 85],
     dangerouslyAllowSVG: true,
-    contentDispositionType: 'attachment',
+    contentDispositionType: "attachment",
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
   compress: true,
@@ -23,7 +23,7 @@ const nextConfig: NextConfig = {
     optimizePackageImports: ["@vercel/analytics", "@vercel/speed-insights"],
     optimizeCss: true,
     serverActions: {
-      bodySizeLimit: '2mb',
+      bodySizeLimit: "2mb",
     },
   },
   compiler: {
@@ -32,20 +32,20 @@ const nextConfig: NextConfig = {
   headers() {
     return [
       {
-        source: '/:all*(svg|jpg|jpeg|png|webp|avif|gif)',
+        source: "/:all*(svg|jpg|jpeg|png|webp|avif|gif)",
         headers: [
           {
-            key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable',
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
           },
         ],
       },
       {
-        source: '/_next/static/:path*',
+        source: "/_next/static/:path*",
         headers: [
           {
-            key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable',
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
           },
         ],
       },
